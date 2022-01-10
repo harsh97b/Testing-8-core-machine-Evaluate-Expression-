@@ -1,0 +1,106 @@
+Output Multi 1 million
+
+core count: 4
+---------------------------------Proceeding to the ReadInputs------------------------------------
+        Storing 1000000 lines of input in List takes: 452ms
+        ReadInputs.noOfLines: 1000000
+        creating 6 arrays with size 1000000  takes: 24ms
+Running ReadInputs takes: 498ms
+-------------------------Proceeding to the StoreInArray and Evaluating---------------------------
+        by thread: pool-1-thread-3       [StoreInArray]    Loop(500001 -> 750000)    Storing in Array and Evaluating 250000 inputs takes: 1299ms
+        by thread: pool-1-thread-1       [StoreInArray]    Loop(0 -> 250000)    Storing in Array and Evaluating 250001 inputs takes: 1261ms
+Task 1 is completed!
+        by thread: pool-1-thread-2       [StoreInArray]    Loop(250001 -> 500000)    Storing in Array and Evaluating 250000 inputs takes: 1300ms
+Task 2 is completed!
+Task 3 is completed!
+        by thread: pool-1-thread-4       [StoreInArray]    Loop(750001 -> 999999)    Storing in Array and Evaluating 249999 inputs takes: 1321ms
+Task 4 is completed!
+Running StoreInArray and Evaluating takes: 1333ms
+-----------------------------Proceeding to the StoreInMapToGroupBy-------------------------------
+        by thread: pool-1-thread-3       [StoreInMapToGroupBy]    Loop(0 -> 999999)    Storing in map 1000000 inputs takes: 468ms
+Task 5 is completed!
+Running StoreInMapToGroupBy takes: 473ms
+-------------------------------Proceeding to the PrintResult------------------------------------
+europe germany 1.16E7
+europe france 2.0E7
+asia india 1.04E7
+       Printing Output from map takes: 5ms
+Task 6 is completed!
+Running PrintResult takes: 5ms
+-------------------------------< Whole program took: 2355ms >-----------------------------------
+
+
+
+
+
+
+
+
+Output Multi 5 million
+core count: 4
+---------------------------------Proceeding to the ReadInputs------------------------------------
+        Storing 5000000 lines of input in List takes: 1832ms
+        ReadInputs.noOfLines: 5000000
+        creating 6 arrays with size 5000000  takes: 148ms
+Running ReadInputs takes: 1994ms
+-------------------------Proceeding to the StoreInArray and Evaluating---------------------------
+        by thread: pool-1-thread-2       [StoreInArray]    Loop(1250001 -> 2500000)    Storing in Array and Evaluating 1250000 inputs takes: 5632ms
+        by thread: pool-1-thread-1       [StoreInArray]    Loop(0 -> 1250000)    Storing in Array and Evaluating 1250001 inputs takes: 5695ms
+Task 1 is completed!
+Task 2 is completed!
+        by thread: pool-1-thread-4       [StoreInArray]    Loop(3750001 -> 4999999)    Storing in Array and Evaluating 1249999 inputs takes: 5705ms
+        by thread: pool-1-thread-3       [StoreInArray]    Loop(2500001 -> 3750000)    Storing in Array and Evaluating 1250000 inputs takes: 5765ms
+Task 3 is completed!
+Task 4 is completed!
+Running StoreInArray and Evaluating takes: 5772ms
+-----------------------------Proceeding to the StoreInMapToGroupBy-------------------------------
+        by thread: pool-1-thread-2       [StoreInMapToGroupBy]    Loop(0 -> 4999999)    Storing in map 5000000 inputs takes: 724ms
+Task 5 is completed!
+Running StoreInMapToGroupBy takes: 739ms
+-------------------------------Proceeding to the PrintResult------------------------------------
+europe germany 5.8E7
+europe france 1.0E8
+asia india 5.2E7
+       Printing Output from map takes: 3ms
+Task 6 is completed!
+Running PrintResult takes: 5ms
+-------------------------------< Whole program took: 8529ms >-----------------------------------
+
+
+
+
+
+
+
+
+
+
+Output Multi 10 million
+core count: 4
+---------------------------------Proceeding to the ReadInputs------------------------------------
+        Storing 10000000 lines of input in List takes: 3011ms
+        ReadInputs.noOfLines: 10000000
+        creating 6 arrays with size 10000000  takes: 145ms
+Running ReadInputs takes: 3177ms
+-------------------------Proceeding to the StoreInArray and Evaluating---------------------------
+        by thread: pool-1-thread-3       [StoreInArray]    Loop(5000001 -> 7500000)    Storing in Array and Evaluating 2500000 inputs takes: 12201ms
+        by thread: pool-1-thread-2       [StoreInArray]    Loop(2500001 -> 5000000)    Storing in Array and Evaluating 2500000 inputs takes: 12437ms
+        by thread: pool-1-thread-4       [StoreInArray]    Loop(7500001 -> 9999999)    Storing in Array and Evaluating 2499999 inputs takes: 14053ms
+        by thread: pool-1-thread-1       [StoreInArray]    Loop(0 -> 2500000)    Storing in Array and Evaluating 2500001 inputs takes: 14177ms
+Task 1 is completed!
+Task 2 is completed!
+Task 3 is completed!
+Task 4 is completed!
+Running StoreInArray and Evaluating takes: 14188ms
+-----------------------------Proceeding to the StoreInMapToGroupBy-------------------------------
+        by thread: pool-1-thread-3       [StoreInMapToGroupBy]    Loop(0 -> 9999999)    Storing in map 10000000 inputs takes: 1397ms
+Task 5 is completed!
+Running StoreInMapToGroupBy takes: 1406ms
+-------------------------------Proceeding to the PrintResult------------------------------------
+europe germany 1.16E8
+europe france 2.0E8
+asia india 1.04E8
+       Printing Output from map takes: 3ms
+Task 6 is completed!
+Running PrintResult takes: 5ms
+-------------------------------< Whole program took: 18807ms >-----------------------------------
